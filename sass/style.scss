@@ -1,0 +1,56 @@
+
+@import "vars";
+@import "normalize";
+
+
+
+
+
+.desk {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: auto;
+  box-sizing: border-box;
+}
+      input[name="drawer"] {
+        display:none;
+      }
+
+      label {
+        position: relative;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        padding:1em;
+        box-sizing: border-box;
+        background-color: red;
+        font-size: 1.2em;
+
+      }
+
+
+
+.drawer-content {
+  overflow: hidden;
+  max-height: 0;
+  position: relative;
+  padding: 0 1.5em;
+  background-color: lightblue;
+  transition: all .5s ease-in;
+}
+
+
+
+
+input[name="drawer"]:checked ~ .drawer-content {
+  max-height: 300px;
+}
+
+input[name="drawer"]:not(:checked) ~ .drawer-content {
+   transition: all .1s;
+}
+
+
