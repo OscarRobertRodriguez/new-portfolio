@@ -57,11 +57,79 @@
 		"oAP": "\/build\/build",
 		"oF": 0
 		},
-	"\/imgs\/Wooden_background.jpg": {
-		"ft": 16384,
-		"iS": 60750,
+	"\/fonts\/leaguegothic-condensed-regular-webfont.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/fonts\/leaguegothic-condensed-regular-webfont.ttf",
+		"oF": 0
+		},
+	"\/fonts\/LeagueGothic-CondensedItalic.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/fonts\/LeagueGothic-CondensedItalic.otf",
+		"oF": 0
+		},
+	"\/fonts\/LeagueGothic-CondensedRegular.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/fonts\/LeagueGothic-CondensedRegular.otf",
+		"oF": 0
+		},
+	"\/fonts\/LeagueGothic-Italic.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/fonts\/LeagueGothic-Italic.otf",
+		"oF": 0
+		},
+	"\/fonts\/leaguegothic-regular-webfont.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/fonts\/leaguegothic-regular-webfont.ttf",
+		"oF": 0
+		},
+	"\/fonts\/LeagueGothic-Regular.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/fonts\/LeagueGothic-Regular.otf",
+		"oF": 0
+		},
+	"\/imgs\/accordian.png": {
+		"ft": 32768,
+		"iS": 14997,
 		"oA": 0,
-		"oAP": "\/build\/imgs\/Wooden_background.jpg",
+		"oAP": "\/build\/imgs\/accordian.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/imgs\/calculator.png": {
+		"ft": 32768,
+		"iS": 14234,
+		"oA": 0,
+		"oAP": "\/build\/imgs\/calculator.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/imgs\/image gallery.png": {
+		"ft": 32768,
+		"iS": 65230,
+		"oA": 0,
+		"oAP": "\/build\/imgs\/image gallery.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/imgs\/login form.png": {
+		"ft": 32768,
+		"iS": 64072,
+		"oA": 0,
+		"oAP": "\/build\/imgs\/login form.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/imgs\/shoppingCart.png": {
+		"ft": 32768,
+		"iS": 7920,
+		"oA": 0,
+		"oAP": "\/build\/imgs\/shoppingCart.png",
 		"oF": 0,
 		"opt": 1
 		},
@@ -88,6 +156,19 @@
 		"pME": 1,
 		"rFN": 0,
 		"uCM": 0
+		},
+	"\/sass\/_fonts.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/sass\/_fonts.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
 		},
 	"\/sass\/_normalize.scss": {
 		"aP": 0,
@@ -127,6 +208,15 @@
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
+		},
+	"\/scripts\/app.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/build\/scripts\/app.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		}
 	},
 "hooks": [
