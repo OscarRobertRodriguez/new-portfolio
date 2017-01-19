@@ -1,35 +1,72 @@
 
 @import "vars";
 @import "normalize";
+@import "fonts";
 
 
 
 
 
 .desk {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 800px;
+  position: fixed;
+  top: 100px;
+  left: 0;
+  width: 300px;
+  min-width: 20%;
   height: auto;
   box-sizing: border-box;
-}
-      input[name="drawer"] {
-        display:none;
-      }
+  box-shadow: 0 3px 5px 0 #ccc;
 
-      label {
-        position: relative;
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        padding:1em;
-        box-sizing: border-box;
-        background-color: red;
+  input[name="drawer"] {
+    display: none;
+  }
+
+  label[for^="tab"] {
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 0;
+    display: flex;
+    min-height: 5em;
+    text-transform: uppercase;
+    justify-content: flex-start;
+    align-items: center;
+    line-height: 4.5em;
+    padding: 1em;
+    box-sizing: border-box;
+    background: #fff;
+    border-bottom: 1px inset darken(complement(lightgray), 4%);
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover {
+
+    }
+  }
+
+  label span {
+    color: black;
+    position: absolute;
+    font-family: 'leagueGothicRegular', sans-serif;
+    letter-spacing: 5px;
+    font-size: 4.5em;
+    display: block;
+    min-width: 100%;
+    min-height: 100%;
+    transition: all .2s ease;
+    &:hover {
+      font-size: 3.2em;
+      letter-spacing: 1px;
+      &:first-letter {
         font-size: 1.2em;
-
       }
+    }
+  }
+
+  div:last-of-type label[for^="tab"] {
+
+    margin-bottom: 0;
+  }
+}
+
 
 
 
@@ -38,19 +75,208 @@
   max-height: 0;
   position: relative;
   padding: 0 1.5em;
-  background-color: lightblue;
-  transition: all .5s ease-in;
+  transition: all .2s ease;
 }
-
 
 
 
 input[name="drawer"]:checked ~ .drawer-content {
-  max-height: 300px;
+  height:auto;
+  max-height:1500px;
+  min-height:500px;
+  width:800px;
+  position: absolute;
+  top:0;
+  left: 100%;
+  margin: 0 auto;
+  transform: translate(400px,0);
+
+
 }
 
-input[name="drawer"]:not(:checked) ~ .drawer-content {
-   transition: all .1s;
+
+input[name="drawer"]:checked ~ label {
+  border-right: 10px inset black;
 }
+
+input[name="drawer"]:checked ~ label > span {
+  font-size: 3.2em;
+  letter-spacing: 10px;
+  &:first-letter {
+    font-size: 1.2em;
+  }
+}
+
+
+
+ul.projectContainer {
+  padding: 0;
+
+  li {
+    list-style: none;
+    display: inline-block;
+    margin: 20px 5px 5px 40px;
+    &:last-of-type {
+      position: absolute;
+      right: 81px;
+      bottom: 15px;
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  img {
+    width: 200px;
+    height: 200px;
+    opacity: .8;
+    transition: all .5s ease-in;
+    border-radius: 5px;
+
+    &:hover {
+      opacity: 1;
+      transform: scale(1.2);
+    }
+
+    &:hover ~ figcaption {
+      border-bottom: 1px solid black;
+    }
+  }
+  figure {
+    padding: 0;
+    margin: 0;
+  }
+
+  figcaption {
+    margin-top: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 20px;
+    color: #000;
+  }
+
+}
+
+
+
+//      contact form
+
+
+.contactForm {
+  margin-top: 20px;
+  width: 800px;
+  box-shadow: 0 5px 10px 0 #ccc;
+
+  fieldset {
+    height: 400px;
+    position: relative;
+    border: none;
+  }
+
+  legend {
+    font-size: 1.8em;
+    font-family: 'leagueGothicRegular', sans-serif;
+  }
+
+  div {
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    margin-left: 50px;
+    &:last-of-type {
+      display: block;
+      margin-left: 0;
+      position: absolute;
+      bottom:80px;
+      left: 130px;
+    }
+  }
+
+  label {
+    position: absolute;
+    top: 20px;
+    left:5px;
+    width: 1px;
+    transition: all .2s ease-in;
+    z-index: -1;
+}
+
+  textarea ~ label {
+    top: 5px;
+    width:100px;
+    padding: 5px;
+
+  }
+
+
+  textarea {
+    width:500px;;
+    height: 200px;
+    border:1px solid lightgray;
+    border-radius: 5px;
+    outline: none;
+    padding:10px;
+    background: transparent;
+    &:focus ~ label {
+      top: -23px;
+      color:$blue;
+    }
+    &:valid ~ label {
+      top:-23px;
+      color:$blue;
+    }
+
+}
+
+  input {
+    margin-top: 20px;
+   width: 250px;
+    border:none;
+    border-bottom: 1px solid black;
+    background: transparent;
+    outline: none;
+    &:focus ~ label {
+      top:2px;
+      left:0;
+      font-variant: small-caps;
+      letter-spacing: 1px;
+      color: $blue;
+    }
+    &:valid ~ label {
+      top:2px;
+      left:0;
+      font-variant: small-caps;
+      letter-spacing: 1px;
+      color: $blue;
+    }
+  }
+
+  input[type="submit"] {
+    background-color: lightgray;
+    border-radius: 5px;
+    position: absolute;
+    font-variant: small-caps;
+    font-size: 2em;
+    width:200px;
+    line-height: 20px;
+    height: 40px;
+    left: 280px;
+    bottom:30px;
+    &:hover {
+      background-color: complement(gray);
+    }
+  }
+}
+
+
+
+
+footer {
+  position: absolute;
+  bottom:0;
+  left:0;
+}
+
 
 

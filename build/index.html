@@ -8,40 +8,77 @@
 <body>
 
 
+<!--accordion-->
 <section class="desk">
 
+   <!-- accordion item 1-->
    <div>
-      <input type="radio" name="drawer" id="tab-1">
-      <label for="tab-1">About</label>
+      <input type="radio" name="drawer" id="tab-1" >
+      <label for="tab-1"><span>Projects</span></label>
 
       <div class="drawer-content">
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab corporis ea nihil obcaecati quam qui quisquam reiciendis, voluptas. Ab adipisci atque magnam molestias nulla, obcaecati quis recusandae sequi ullam veritatis.</p>
+         <ul class="projectContainer">
+            <li><a href="https://oscarrobertrodriguez.github.io/product-listing/"><figure><img src="imgs/shoppingCart.png" alt="shopping cart link"><figcaption>Shopping Cart</figcaption></figure></a></li>
+            <li><a href="https://oscarrobertrodriguez.github.io/md-forms/"><figure><img src="imgs/login%20form.png" alt="login form link"><figcaption>forms</figcaption></figure></a></li>
+            <li><a href="#"><figure><img src="imgs/accordian.png" alt="accordian link"><figcaption>accordian</figcaption></figure></a></li>
+            <li><a href="#"><figure><img src="imgs/image%20gallery.png" alt="image gallery link"><figcaption>image gallery</figcaption></figure></a></li>
+            <li><a href="#"><figure><img src="imgs/calculator.png" alt="calculator link"><figcaption>calculator</figcaption></figure></a></li>
+         </ul>
       </div>
    </div>
 
-
+   <!--accordion item 2-->
    <div>
       <input type="radio" name="drawer" id="tab-2">
-      <label for="tab-2">Contact</label>
+      <label for="tab-2"><span>About</span></label>
+
+      <div class="drawer-content">
+
+      </div>
+   </div>
+
+   <!--accordion item 3 Contact-->
+   <div>
+      <input type="radio" name="drawer" id="tab-3">
+      <label for="tab-3"><span>skills</span></label>
 
       <div class="drawer-content">
          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eaque iste magnam odit quas sequi tempore vitae. Accusamus aliquid, ipsa laboriosam minima nisi nostrum omnis quasi rem rerum voluptatem. Veniam!</p>
       </div>
    </div>
 
+
+   <!--accordion item 4-->
    <div>
-      <input type="radio" name="drawer" id="tab-3">
-      <label for="tab-3">Skills</label>
+      <input type="radio" name="drawer" id="tab-4">
+      <label for="tab-4"><span>contact</span></label>
 
       <div class="drawer-content">
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad aliquam assumenda, consectetur culpa dicta dignissimos, doloribus, earum exercitationem facere facilis fugiat hic labore nulla provident saepe sed sit voluptates!</p>
+         <form class="contactForm">
+            <fieldset>
+               <legend>Lets build something</legend>
+               <div>
+                  <input class="name" type="text" required>
+                  <label>Name</label>
+               </div>
+               <div>
+                  <input  type="text" required>
+                  <label class="emailLabel">Email</label>
+               </div>
+               <div>
+                  <textarea required></textarea>
+                  <label class="messageLabel">Dear Batman,</label>
+               </div>
+               <input type="submit" value="send">
+            </fieldset>
+         </form>
       </div>
    </div>
 </section>
 
 
 
-
+<footer><p>Hello</p></footer>
 
 </body>
 </html>
