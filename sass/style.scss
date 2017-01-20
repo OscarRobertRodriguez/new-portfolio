@@ -4,7 +4,9 @@
 @import "fonts";
 
 
-
+.wrapper {
+  position: relative;
+}
 
 
 .desk {
@@ -272,11 +274,121 @@ ul.projectContainer {
 
 
 
-footer {
-  position: absolute;
-  bottom:0;
-  left:0;
+
+
+    //about me section
+
+
+.meImg {
+  position: relative;
+  height: auto;
+  width: 250px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+    img {
+      width:200px;
+      height: 200px;
+      border-radius: 80%;
+      opacity: .9;
+      transition: all .2s ease;
+
+      &:hover {
+        opacity: 1;
+        box-shadow: 5px 2px 5px lightgrey;
+      }
 }
+
+      a:first-of-type {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+
+      a:last-of-type {
+        position: absolute;
+        bottom:0;
+        right: 0;
+      }
+
+      a img {
+        width: 50px;
+        height: 50px;
+        transition: all .2s ease;
+        opacity: 1;
+        &:hover {
+          box-shadow: 1px 2px lightgrey;
+          transform: scale(1.1);
+        }
+      }
+}
+
+
+.about {
+
+    p {
+      padding-top:10px;
+      width: 350px;
+      margin: 0 auto;
+      margin-top: 30px;
+    }
+  & p:first-of-type {
+    text-transform: capitalize;
+    width:290px;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-size: .8em;
+    padding-top: 5px;
+    padding-left: 30px;
+    span {
+      position: relative;
+      padding: 0 5px;
+      font-weight: bolder;
+      border-radius: 50%;
+      font-size: 18px;
+      top:-3px;
+      display: inline-block;
+    }
+  }
+}
+
+
+
+
+
+
+    .bigName{
+      position: fixed;
+      z-index: -1;
+      box-sizing: border-box;
+      bottom:140px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      left:0;
+      height: 500px;
+      padding: 0;
+      margin-bottom:-210px;
+      font-size: 34em;
+      font-family: 'leagueGothicRegular', sans-serif;
+      font-variant: small-caps;
+      transition: all 1s ease-in;
+      &:first-letter {
+        font-size: 1.3em;
+      }
+      &:hover {
+        color:white;
+        text-shadow: 10px 3px 1px grey;
+      }
+
+      span {
+        height: 300px;
+      }
+    }
+
 
 
 

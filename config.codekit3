@@ -51,6 +51,12 @@
 		"oAP": "\/build\/.idea\/workspace.xml",
 		"oF": 0
 		},
+	"\/.idea\/workspace.xml___jb_tmp___": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/.idea\/workspace.xml___jb_tmp___",
+		"oF": 0
+		},
 	"\/build": {
 		"ft": 65536,
 		"oA": 1,
@@ -109,6 +115,22 @@
 		"oF": 0,
 		"opt": 1
 		},
+	"\/imgs\/github1.png": {
+		"ft": 32768,
+		"iS": 1172,
+		"oA": 0,
+		"oAP": "\/build\/imgs\/github1.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/imgs\/github2.png": {
+		"ft": 32768,
+		"iS": 1187,
+		"oA": 0,
+		"oAP": "\/build\/imgs\/github2.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/imgs\/image gallery.png": {
 		"ft": 32768,
 		"iS": 65230,
@@ -125,6 +147,14 @@
 		"oF": 0,
 		"opt": 1
 		},
+	"\/imgs\/me.jpg": {
+		"ft": 16384,
+		"iS": 676595,
+		"oA": 0,
+		"oAP": "\/build\/imgs\/me.jpg",
+		"oF": 0,
+		"opt": 1
+		},
 	"\/imgs\/shoppingCart.png": {
 		"ft": 32768,
 		"iS": 7920,
@@ -132,6 +162,14 @@
 		"oAP": "\/build\/imgs\/shoppingCart.png",
 		"oF": 0,
 		"opt": 1
+		},
+	"\/imgs\/twitter.png": {
+		"ft": 32768,
+		"iS": 1026,
+		"oA": 0,
+		"oAP": "\/build\/imgs\/twitter.png",
+		"oF": 0,
+		"opt": 0
 		},
 	"\/index.html": {
 		"ft": 8192,
