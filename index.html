@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
    <meta charset="UTF-8">
    <title>Oscar's Porfolio</title>
    <link rel="stylesheet" href="build/sass/style.css">
@@ -17,13 +18,85 @@
       <label for="tab-1"><span>Projects</span></label>
 
       <div class="drawer-content">
-         <ul class="projectContainer">
-            <li><a href="https://oscarrobertrodriguez.github.io/product-listing/"><figure><img src="imgs/shoppingCart.png" alt="shopping cart link"><figcaption>Shopping Cart</figcaption></figure></a></li>
-            <li><a href="https://oscarrobertrodriguez.github.io/md-forms/"><figure><img src="imgs/login%20form.png" alt="login form link"><figcaption>forms</figcaption></figure></a></li>
-            <li><a href="#"><figure><img src="imgs/accordian.png" alt="accordian link"><figcaption>accordian</figcaption></figure></a></li>
-            <li><a href="#"><figure><img src="imgs/image%20gallery.png" alt="image gallery link"><figcaption>image gallery</figcaption></figure></a></li>
-            <li><a href="#"><figure><img src="imgs/calculator.png" alt="calculator link"><figcaption>calculator</figcaption></figure></a></li>
-         </ul>
+
+         <div class="tabs">
+
+            <div class="tab">
+
+               <input type="radio" id="tab-01" name="tabs-group-1">
+               <label for="tab-01">Shopping Cart</label>
+
+               <div class="content">
+                  <img src="imgs/shoppingCart.gif">
+                  <div class="content-links">
+                     <a href="https://github.com/OscarRobertRodriguez/product-listing"><img src="imgs/github1.png">view source</a>
+                     <a href="https://oscarrobertrodriguez.github.io/product-listing/">view demo</a>
+                  </div>
+               </div>
+            </div>
+
+
+            <div class="tab">
+
+               <input type="radio" id="tab-02" name="tabs-group-1">
+               <label for="tab-02">Forms</label>
+
+               <div class="content">
+                  <img src="imgs/loginForm.gif">
+                  <div class="content-links">
+                     <a href="https://github.com/OscarRobertRodriguez/md-forms"><img src="imgs/github1.png">view source</a>
+                     <a href="https://oscarrobertrodriguez.github.io/md-forms/">view demo</a>
+                  </div>
+               </div>
+            </div>
+
+            <div class="tab">
+
+               <input type="radio" id="tab-03" name="tabs-group-1">
+               <label for="tab-03">Accordian</label>
+
+               <div class="content">
+                  <img src="imgs/accordian.gif">
+                  <div class="content-links">
+                     <a href="http://codepen.io/nopity/pen/oBXpXW"><img src="imgs/github1.png">view source</a>
+                     <a href="http://codepen.io/nopity/pen/oBXpXW">view demo</a>
+                  </div>
+               </div>
+            </div>
+
+
+            <div class="tab">
+
+               <input type="radio" id="tab-04" name="tabs-group-1">
+               <label for="tab-04">image gallery</label>
+
+               <div class="content">
+                  <img src="imgs/imageGallery.gif">
+                  <div class="content-links">
+                     <a href="https://github.com/OscarRobertRodriguez/bov-imageGallery"><img src="imgs/github1.png">view source</a>
+                     <a href="https://oscarrobertrodriguez.github.io/bov-imageGallery/">view demo</a>
+                  </div>
+               </div>
+            </div>
+
+
+            <div class="tab">
+
+               <input type="radio" id="tab-05" name="tabs-group-1">
+               <label for="tab-05">calculator</label>
+
+               <div class="content">
+                  <img src="imgs/calculator.gif">
+                  <div class="content-links">
+                     <a href="https://github.com/OscarRobertRodriguez/calculator"><img src="imgs/github1.png">view source</a>
+                     <a href="https://oscarrobertrodriguez.github.io/calculator/">view demo</a>
+                  </div>
+               </div>
+            </div>
+
+
+         </div>
+
       </div>
    </div>
 
@@ -93,3 +166,5 @@
 
 </body>
 </html>
+
+

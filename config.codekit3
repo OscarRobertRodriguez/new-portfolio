@@ -51,12 +51,6 @@
 		"oAP": "\/build\/.idea\/workspace.xml",
 		"oF": 0
 		},
-	"\/.idea\/workspace.xml___jb_tmp___": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/build\/.idea\/workspace.xml___jb_tmp___",
-		"oF": 0
-		},
 	"\/build": {
 		"ft": 65536,
 		"oA": 1,
@@ -99,11 +93,27 @@
 		"oAP": "\/build\/fonts\/LeagueGothic-Regular.otf",
 		"oF": 0
 		},
+	"\/imgs\/accordian.gif": {
+		"ft": 4194304,
+		"iS": 1340618,
+		"oA": 0,
+		"oAP": "\/build\/imgs\/accordian.gif",
+		"oF": 0,
+		"opt": 1
+		},
 	"\/imgs\/accordian.png": {
 		"ft": 32768,
 		"iS": 14997,
 		"oA": 0,
 		"oAP": "\/build\/imgs\/accordian.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/imgs\/calculator.gif": {
+		"ft": 4194304,
+		"iS": 748344,
+		"oA": 0,
+		"oAP": "\/build\/imgs\/calculator.gif",
 		"oF": 0,
 		"opt": 1
 		},
@@ -121,7 +131,7 @@
 		"oA": 0,
 		"oAP": "\/build\/imgs\/github1.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/imgs\/github2.png": {
 		"ft": 32768,
@@ -129,13 +139,21 @@
 		"oA": 0,
 		"oAP": "\/build\/imgs\/github2.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/imgs\/image gallery.png": {
 		"ft": 32768,
 		"iS": 65230,
 		"oA": 0,
 		"oAP": "\/build\/imgs\/image gallery.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/imgs\/imageGallery.gif": {
+		"ft": 4194304,
+		"iS": 10835491,
+		"oA": 0,
+		"oAP": "\/build\/imgs\/imageGallery.gif",
 		"oF": 0,
 		"opt": 1
 		},
@@ -147,11 +165,27 @@
 		"oF": 0,
 		"opt": 1
 		},
+	"\/imgs\/loginForm.gif": {
+		"ft": 4194304,
+		"iS": 14163796,
+		"oA": 0,
+		"oAP": "\/build\/imgs\/loginForm.gif",
+		"oF": 0,
+		"opt": 1
+		},
 	"\/imgs\/me.jpg": {
 		"ft": 16384,
 		"iS": 676595,
 		"oA": 0,
 		"oAP": "\/build\/imgs\/me.jpg",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/imgs\/shoppingCart.gif": {
+		"ft": 4194304,
+		"iS": 0,
+		"oA": 0,
+		"oAP": "\/build\/imgs\/shoppingCart.gif",
 		"oF": 0,
 		"opt": 1
 		},
@@ -169,7 +203,7 @@
 		"oA": 0,
 		"oAP": "\/build\/imgs\/twitter.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/index.html": {
 		"ft": 8192,

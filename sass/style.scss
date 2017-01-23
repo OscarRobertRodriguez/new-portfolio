@@ -23,7 +23,7 @@
     display: none;
   }
 
-  label[for^="tab"] {
+  & > div > label {
     overflow: hidden;
     position: relative;
     margin-bottom: 0;
@@ -39,9 +39,6 @@
     border-bottom: 1px inset darken(complement(lightgray), 4%);
     border-radius: 5px;
     cursor: pointer;
-    &:hover {
-
-    }
   }
 
   label span {
@@ -63,7 +60,7 @@
     }
   }
 
-  div:last-of-type label[for^="tab"] {
+  & > div:last-of-type label {
 
     margin-bottom: 0;
   }
@@ -84,8 +81,7 @@
 
 input[name="drawer"]:checked ~ .drawer-content {
   height:auto;
-  max-height:1500px;
-  min-height:500px;
+  min-height:800px;
   width:800px;
   position: absolute;
   top:0;
@@ -111,54 +107,125 @@ input[name="drawer"]:checked ~ label > span {
 
 
 
-ul.projectContainer {
-  padding: 0;
 
-  li {
-    list-style: none;
-    display: inline-block;
-    margin: 20px 5px 5px 40px;
-    &:last-of-type {
-      position: absolute;
-      right: 81px;
-      bottom: 15px;
-    }
+
+
+
+
+.tabs {
+  position: relative;
+  margin: 0 auto;
+  width: auto;
+  height: 500px;
+
+
+  input[type="radio"] {
+    display: none;
   }
 
-  a {
-    text-decoration: none;
+  & .tab {
+    display: block;
+    width:170px;
+    height: 40px;
   }
 
-  img {
-    width: 200px;
-    height: 200px;
-    opacity: .8;
-    transition: all .5s ease-in;
-    border-radius: 5px;
-
-    &:hover {
-      opacity: 1;
-      transform: scale(1.2);
-    }
-
-    &:hover ~ figcaption {
-      border-bottom: 1px solid black;
-    }
-  }
-  figure {
-    padding: 0;
-    margin: 0;
-  }
-
-  figcaption {
-    margin-top: 20px;
-    text-align: center;
+  & label[for^="tab-0"] {
     text-transform: capitalize;
-    font-size: 20px;
-    color: #000;
+    margin-top:20px;
+    line-height: 40px;
+    text-align: center;
+    display: block;
+    border-bottom:1px solid lightgray;
+    padding:5px;
+    border-radius: 5px;
+    width:100%;
+    transition: all .2s ease-in;
+    cursor: pointer;
+    &:hover {
+      background-color: complement(lightgray);
+      box-shadow: 1px 2px 3px grey;
+      letter-spacing: 1px;
+      cursor: pointer;
+    }
   }
 
+  & .tab:last-of-type {
+    border-bottom: none;
+  }
+
+  .content {
+    position: absolute;
+    background: #fff;
+    top:0;
+    left:200px;
+    width:500px;
+    height:auto;
+    padding-bottom: 10px;
+    border:1px solid #ccc;
+    border: none;
+
+    & img {
+      width:100%;
+      height: 440px;
+      border-radius:5px;
+    }
+
+    & .content-links {
+      margin: 0 auto;
+      width:300px;
+      height: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: top;
+
+      & > a {
+        font-size:18px;
+        margin-top:5px;
+        font-variant: small-caps;
+        text-decoration: none;
+        line-height: 40px;
+        color:black;
+        letter-spacing:1px;
+        transition: all .2s ease-in;
+        opacity:.8;
+        &:hover {
+          transform: scale(1.2);
+          opacity:1;
+        }
+
+        & img {
+          width:30px;
+          height: 30px;
+          float: left;
+          padding: 5px;
+
+        }
+      }
+
+    }
+  }
+
+  & input[type="radio"]:checked ~ label {
+    background-color: complement(lightgray);
+    box-shadow: 1px 2px 3px grey;
+    z-index: 2;
+  }
+
+  & input[type="radio"]:checked ~ label ~ .content {
+    z-index: 1;
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
